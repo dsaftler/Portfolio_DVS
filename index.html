@@ -13,7 +13,18 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="sidebar">
+        <a class="active" href="index.html">Profile</a>
+        <a href="experience.html">Experience</a>
+        <a href="projects.html">Projects</a>
+        <a href="games.html">Fun & Games</a>
+        <a href="references.html">References</a>
+    </div>
+   <!-- <button class="tablink" onclick="openPage('Profile')" id="defaultOpen">Diana V. Saftler</button>
+   <button class="tablink" onclick="openPage('Experience')" id="experience">Experience</button>
+   <button class="tablink" onclick="openPage('Projects')" id="projects">Projects</button>
+   <button class="tablink" onclick="openPage('Portfolio')" id="Fun & Games">Fun & Games</button> -->
+    <!-- <nav class="navbar navbar-expand-lg navbar-light">
         <a class="navbar-brand"
             style="background-color: #E54D3A; color: white; padding-right: 5px; padding-left: 5px; margin-left: -15px"
             href="#"> Diana Saftler </a>
@@ -34,11 +45,13 @@
                 </li>
             </ul>
         </div>
-    </nav>
+    </nav> -->
 
-    <div class="container" style='background-image: url("assets/images/circles-light.png"); padding-left:60px; padding-right: 60px;padding-bottom: 220px'>
-
-        <div class="bg-white container" style="padding-top: 20px; padding-bottom: 20px">
+    <div class="container"  padding-left:60px; padding-right: 60px;padding-bottom: 220px'>
+<!-- style='background-image: url("assets/images/circles-light.png"); padding-left:60px; padding-right: 60px;padding-bottom: 220px'>
+ -->
+    <div class="container">
+        <div class="container bg-white-panel " 
             <h2>About Me</h2>
             <img class="mr-3 float-left" src="assets/images/photo.jpg" alt="Diana Saftler" align="left " width="175">
 
@@ -62,7 +75,7 @@
         href='https://www.linkedin.com/in/dsaftler?trk=profile-badge'>Diana Saftler</a></div>
 
     </div>
-    <footer class="footer text-center" ;
+    <footer class="footer text-center" id="sticky" ;
         style="background-color: #E54D3A; color: white; padding: 10px"
         <div class="container">
             <span>copyright&copy 2019</span>
@@ -70,6 +83,7 @@
     </footer>
 
 <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
+<script type="text/javascript" src="assets/app.js"
 </body>
 
 </html>
