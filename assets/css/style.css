@@ -8,7 +8,7 @@ body {
     background-color: #ffffff;
     padding: 30px;
     color: #777777;
-    background-image: url("../images/circles-light.png");
+    background-image: url("../images/gplaypattern.png");
 
 }
 
@@ -20,6 +20,7 @@ header {
 }
 
 footer {
+
     color: black;
     font-size: small;
     text-align: center;
@@ -33,8 +34,24 @@ footer {
     border-top-width: 6px;
     border-left-width: 0;
     border-right-width: 0;
+    
 }
-
+#sticky {
+    width: 100%;
+    height: 44px;
+    padding-top: 20px;
+    background: black;
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+    text-align: center;
+    position: fixed;
+    /*Here's what sticks it*/
+    bottom: 0;
+    /*to the bottom of the window*/
+    left: 0;
+    /*and to the left of the window.*/
+}
 p {
     padding: 0 0 10 0;
 }
@@ -54,7 +71,7 @@ p {
     /* background-color: #b1f3f3;  */
     height: 650px;
     width: 1200px;
-    background-image: url("../images/circles-light.png");
+    background-image: url("../images/contemporary_china.jpg");
     border-style: solid;
     border-top-color: #999a9b;
     border-top-width: 2px;
@@ -72,6 +89,10 @@ p {
     /* padding-bottom: 220px */
 }
 
+.bg-white-panel {
+    background-color: white !important;
+    max-width: 800px;
+}
 .article {
     clear: both;
     display: inline-block;
@@ -223,7 +244,7 @@ input[type="text"] {
 
 .row {
     margin: 0;
-    height: 320px;
+    height: 330px;
 }
 
 .row,
@@ -271,4 +292,66 @@ input[type="text"] {
     border: solid;
     border-width: 1px;
 
+}
+/* The side navigation menu */
+.sidebar {
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #f1f1f1;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+}
+
+/* Sidebar links */
+.sidebar a {
+    display: block;
+    color: black;
+    padding: 16px;
+    text-decoration: none;
+}
+
+/* Active/current link */
+.sidebar a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+/* Links on mouse-over */
+.sidebar a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+}
+
+/* Page content. The value of the margin-left property should match the value of the sidebar's width property */
+div.content {
+    margin-left: 200px;
+    padding: 1px 16px;
+    height: 1000px;
+}
+
+/* On screens that are less than 700px wide, make the sidebar into a topbar */
+@media screen and (max-width: 700px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    .sidebar a {
+        float: left;
+    }
+
+    div.content {
+        margin-left: 0;
+    }
+}
+
+/* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+@media screen and (max-width: 400px) {
+    .sidebar a {
+        text-align: center;
+        float: none;
+    }
 }

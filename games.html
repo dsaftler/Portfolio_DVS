@@ -36,50 +36,116 @@
     </div>
   </nav>
   <!-- <div class="col-sm-12"> -->
+<!-- Side Modal Top Right -->
+
+<!-- To change the direction of the modal animation change .right class -->
+<div class="modal fade right" id="sideModalTR" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+  aria-hidden="true">
+
+  <!-- Add class .modal-side and then add class .modal-top-right (or other classes from list above) to set a position to the modal -->
+  <div class="modal-dialog modal-side modal-top-right" role="document">
+
+
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title w-100" id="myModalLabel">Modal title</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Side Modal Top Right -->
 
   <div class="container"
+
+
     style='background-image: url("assets/images/circles-light.png"); padding-left:60px; padding-right: 60px;padding-bottom: 15px'>
      <div class="bg-white-lg container" style="padding-top: 20px; padding-bottom: 20px">
        <h2>Fun & Games</h2>
+         <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#sideModalTR">
+           Launch demo modal
+         </button>
      <div class = "row">
       <div class="col-sm-12 col-md-6 col-lg-4">
-        <a href="https://dsaftler.github.io/coloringpages/" target="Coloring Pages"><img class="projThumb" src="assets\images\coloring-pages.png" alt="Coloring Pages" title="Coloring Pages" class="clickable border border-primary"></a>
+        <figure><a href="https://dsaftler.github.io/coloringpages/" target="Coloring Pages"><img class="projThumb" src="assets\images\coloring-pages.png" alt="Coloring Pages" title="Coloring Pages" class="clickable border border-primary"></a>
+          <figcaption>HTML/CSS</figcaption> 
+        </figure>
       </div>
       <div class="col-sm-12 col-md-6 col-lg-4">
-        <a href="https://dsaftler.github.io/JavaScript/" target="Letter Guess"><img class="projThumb"
-              src="assets\images\letter-guess.png" alt="Letter Guess" title="Letter Guess"
-              class="clickable border border-primary"></a>
+      <figure>
+          <a href="https://dsaftler.github.io/JavaScript/" target="Letter Guess"><img class="projThumb"
+                src="assets\images\letter-guess.png" alt="Letter Guess" title="Letter Guess"
+                class="clickable border border-primary"></a>
+        <figcaption>JavaScript/CSS/HTML</figcaption>
+      </figure>
       </div>  
       <div class="col-sm-12 col-md-6 col-lg-4">
-        <a href="https://dsaftler.github.io/unit-4-game/" target="Math Magic">
-            <img class="projThumb" src="assets\images\Math_Puzzle.png" alt="Math Magic"
-              title="Math Magic"></a>
+        <figure>
+          <a href="https://dsaftler.github.io/unit-4-game/" target="Math Magic">
+              <img class="projThumb" src="assets\images\Math_Puzzle.png" alt="Math Magic"
+                title="Math Magic"></a>
+          <figcaption>JavaScript/Math()/Timers/</figcaption>
+        </figure>
       </div>
     </div>
     <div class="row">
       <div class="col-sm-12 col-md-6 col-lg-4">
-           <a href="https://dsaftler.github.io/TriviaGame/" target="Trivia">
-            <img class="projThumb" src="assets\images\Trivia.png" alt="Trivia" title="Trivia"></a>
-      </div>
+        <figure>
+             <a href="https://dsaftler.github.io/TriviaGame/" target="Trivia">
+              <img class="projThumb" src="assets\images\Trivia.png" alt="Trivia" title="Trivia"></a>
+              <figcaption>JavaScript/Arrays/Timers/</figcaption>
+            </figure>
+          </div>
       <div class="col-sm-12 col-md-6 col-lg-4">
+        <figure>
           <a href="https://dsaftler.github.io/GifTastic/" target="Game of Giffy">
             <img class="projThumb" src="assets\images\GOT_Giffy.png" alt="GOT Giffy" title="GOT Giffy"></a>
+        <figcaption>Bootstrap/jQuery/Giphy/</figcaption>
+        </figure>
       </div>
 
       <div class="col-sm-12 col-md-6 col-lg-4">
+        <figure>
         <a href="https://jbambei.github.io/TourApp/start.html" target="Park Ninja">
           <img class="projThumb" src="assets\images\ParkNinja.png" alt="Park Ninja" title="Park Ninja"></a>
+         <figcaption>Firebase/Axios</figcaption>
+         </figure>
       </div>
       </div>
+
+
       <div class="row">
       <div class="col-sm-12 col-md-6 col-lg-4">
+        <figure>
         <a href="https://lit-garden-38073.herokuapp.com/" target="Friend Finder">
           <img class="projThumb" src="assets\images\Friend-Finder.png" alt="Friend Finder" title="Friend Finder"></a>
+          <figcaption>Node/Express</figcaption>
+        </figure>
       </div>
+
       <div class="col-sm-12 col-md-6 col-lg-4">
+        <figure>
         <a href="https://sheltered-refuge-31886.herokuapp.com/" target="Eat-da-Burger">
           <img class="projThumb" src="assets\images\Eat-da-Burger.png" alt="Eat da Burger" title="Eat-da-Burger"></a>
+          <figcaption>Node/Express/Handlebars</figcaption>
+        </figure>
       </div>
+     <div class="col-sm-12 col-md-6 col-lg-4">
+        <figure>
+       <a href="https://stark-peak-64015.herokuapp.com/" target="LocalVoter">
+         <img class="projThumb" src="assets\images\LocalVoter.png" alt="LocalVoter" title="LocalVoter"></a>
+         <figcaption>Node/Express/Handlebars/MySQL/Passport/Axios</figcaption>
+     </div>
+     </figure>
     </div>
 </div>
           
