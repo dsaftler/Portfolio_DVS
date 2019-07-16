@@ -1,0 +1,350 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 14px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: 'Roboto Slab', 'Literata';
+  color: #565453;
+  background-image: url("../images/fresh_snow.png");
+}
+
+header {
+  grid-area: header;
+  background-color: #ffffff;
+  box-shadow: 15px 15px 10px grey;
+  padding: 20px;
+  text-align: center;
+}
+
+main {
+  display: flexbox;
+  grid-gap: 2em;
+  grid-template-columns: 50px 3fr 7em 2fr 1fr;
+  grid-area: main;
+  background-color: #ffffff;
+  box-shadow: 15px 15px 10px grey;
+  padding: 20px;
+}
+
+nav {
+  grid-area: nav;
+  padding: 20px;
+  background-color: #ffffff;
+  box-shadow: 15px 15px 10px grey;
+}
+
+aside {
+  grid-area: aside;
+  padding: 20px;
+  background-color: #ffffff;
+  box-shadow: 15px 15px 10px grey;
+}
+
+footer {
+  grid-area: footer;
+  background-color: #ffffff;
+  box-shadow: 15px 15px 10px grey;
+  padding: 20px;
+  text-align: right;
+}
+
+.wrapper {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: .5fr 3fr 1fr;
+  grid-template-areas:
+    "header header header"
+    "nav main aside"
+    "gallery gallery gallery"
+    "footer footer footer";
+}
+
+@media (max-width: 500px) {
+  .wrapper {
+    grid-template-columns: 4fr;
+    grid-template-areas:
+      "header"
+      "nav"
+      "main"
+      "aside"
+      "gallery"
+      "footer"
+  }
+}
+
+#sticky {
+  width: 100%;
+  height: 44px;
+  padding-top: 20px;
+  background: black;
+  color: white;
+  font-weight: bold;
+  font-size: 24px;
+  text-align: center;
+  position: fixed;
+  /*Here's what sticks it*/
+  bottom: 0;
+  /*to the bottom of the window*/
+  left: 0;
+  /*and to the left of the window.*/
+}
+
+p {
+  padding: 0 0 10 0;
+}
+
+.bg-white-lg {
+  width: 100%;
+  /* height: 765px; */
+  background-color: white;
+}
+
+.bg-pattern {
+  clear: both;
+  /* margin-top: 40px; */
+  padding: 50px;
+  padding-top: 5px;
+  /* background-color: #b1f3f3;  */
+  height: 650px;
+  width: 1200px;
+  background-image: url("../images/contemporary_china.jpg");
+  border-style: solid;
+  border-top-color: #999a9b;
+  border-top-width: 2px;
+  border-left-width: 0;
+  border-right-width: 0;
+  border-bottom-color: #1FC9DE;
+  border-bottom-width: 6px;
+}
+
+.container-img {
+  background-image: url("assets/images/circles-light.png");
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+.bg-white-panel {
+  background-color: white !important;
+  max-width: 800px;
+}
+
+.article {
+  clear: both;
+  display: inline-block;
+  /* position: absolute; */
+  top: 150px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin-left: 115px;
+  margin-top: 20px;
+  width: 960px;
+  height: 535px;
+  background-color: #ffffff;
+  padding: 15px;
+  overflow: auto;
+  z-index: 1;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li a {
+  display: block;
+  width: 60 px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  float: right;
+  width: 200px;
+}
+
+li {
+  display: inline-block;
+}
+
+li a {
+  color: #777777;
+  text-decoration: none;
+  padding: 5px;
+}
+
+.nav-item {
+  color: #777777;
+}
+
+.active {
+  background-color: #E54D3A;
+  color: white !important;
+}
+
+li a:hover {
+  background-color: #E54D3A;
+  color: white;
+}
+
+h1 {}
+
+h2 {}
+
+.image_about {
+  float: left;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  width: 230px;
+  height: 310px;
+}
+
+input[type="text"] {
+  width: 320px;
+  margin: 0;
+  padding: 2px;
+  padding-left: 10px;
+  -webkit-box-sizing: border-box;
+  /* For legacy WebKit based browsers */
+  -moz-box-sizing: border-box;
+  /* For legacy (Firefox <29) Gecko based browsers */
+  box-sizing: border-box;
+}
+
+.submit {
+  display: block;
+  width: 60px;
+  height: 29px;
+  background-color: #1FC9DE;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.portfolio {
+  max-width: 100%;
+  max-height: 100%
+}
+
+.content {
+  padding: 6px;
+  float: left;
+}
+
+.row {
+  margin: 0;
+  height: 330px;
+}
+
+.row,
+.row>.column {
+  padding: 25 px;
+}
+
+.col {
+  float: left;
+  height: 225px;
+  width: 25%;
+  margin: 0;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.gallery {
+  grid-area: gallery;
+  border: 2px solid #1FC9DE;
+  padding: 10px;
+  height: 200px;
+  width: 200px;
+}
+
+.gallery:hover {
+  border-color: #06faee;
+}
+
+.projThumb {
+  border: 2px solid #1FC9DE;
+  padding: 10px;
+  height: 310px;
+  width: 100%;
+}
+
+.projThumb:hover {
+  border-color: #06faee;
+}
+
+.box {
+  height: 150px;
+  border: solid;
+  border-width: 1px;
+}
+
+/* The side navigation menu */
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #f1f1f1;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+/* Sidebar links */
+.sidebar a {
+  display: block;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+}
+
+/* Active/current link */
+.sidebar a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+/* Links on mouse-over */
+.sidebar a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+/* Page content. The value of the margin-left property should match the value of the sidebar's width property */
+div.content {
+  margin-left: 200px;
+  padding: 1px 16px;
+  height: 1000px;
+}
+
+/* On screens that are less than 700px wide, make the sidebar into a topbar */
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+
+  .sidebar a {
+    float: left;
+  }
+
+  div.content {
+    margin-left: 0;
+  }
+}
+
+/* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+}
