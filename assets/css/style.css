@@ -186,20 +186,27 @@ figcaption {
 .projThumb:hover {
     border-color: #06faee;
 }
-.box {
-    height: 150px;
-    border: solid;
-    border-width: 1px;
-}
 
-@media screen and (max-width: 500px) {
-    .wrapper_main {grid-template-columns: 4fr;
+
+@media screen and (max-width: 700px) {
+    .wrapper_main {grid-template-columns: 1fr;
+         grid-template-rows: auto;
     grid-template-areas:
     "header"
     "nav"
     "main"
     "aside"
-    "footer"}
+    "footer"},
+    .wrapper_gallery {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+         "header"
+         "nav"
+         "gallery"
+         "footer"
+         }
+    }
     }
 @media screen and (max-width: 1500px) {
         .main {column-count: 1}
